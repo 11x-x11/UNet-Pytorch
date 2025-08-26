@@ -1,0 +1,21 @@
+INFO: Starting training:
+        Epochs:          40
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   465
+        Validation size: 5
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/40:  14%|████████████████▊                                                                                                         | 64/465 [00:02<00:13, 30.49img/s, loss (batch)=1.67]
+Traceback (most recent call last):
+  File "C:\Users\Nishaoqing\Desktop\Pytorch-UNet\Pytorch-UNet\train.py", line 263, in <module>
+    train_model(
+  File "C:\Users\Nishaoqing\Desktop\Pytorch-UNet\Pytorch-UNet\train.py", line 187, in train_model
+    logging.info('Validation Dice score: {}'.format(val_score), flush=True)
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 2148, in info
+    root.info(msg, *args, **kwargs)
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\logging\__init__.py", line 1489, in info
+    self._log(INFO, msg, args, **kwargs)
+TypeError: Logger._log() got an unexpected keyword argument 'flush'

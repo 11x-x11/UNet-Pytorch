@@ -1,0 +1,172 @@
+2025-08-22 17:54:22,419 INFO    StreamThr :99190 [internal.py:wandb_internal():88] W&B internal server running at pid: 99190, started at: 2025-08-22 17:54:22.418178
+2025-08-22 17:54:22,422 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: status
+2025-08-22 17:54:22,425 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: status
+2025-08-22 17:54:22,426 DEBUG   SenderThread:99190 [sender.py:send():303] send: header
+2025-08-22 17:54:22,427 INFO    WriterThread:99190 [datastore.py:open_for_write():75] open: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/run-wpm7j3li.wandb
+2025-08-22 17:54:22,445 DEBUG   SenderThread:99190 [sender.py:send():303] send: run
+2025-08-22 17:54:22,446 INFO    SenderThread:99190 [sender.py:_maybe_setup_resume():593] checking resume status for None/U-Net/wpm7j3li
+2025-08-22 17:54:23,301 INFO    SenderThread:99190 [dir_watcher.py:__init__():216] watching files in: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files
+2025-08-22 17:54:23,301 INFO    SenderThread:99190 [sender.py:_start_run_threads():928] run started: wpm7j3li with start time 1755849262.386365
+2025-08-22 17:54:23,301 DEBUG   SenderThread:99190 [sender.py:send():303] send: summary
+2025-08-22 17:54:23,301 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: check_version
+2025-08-22 17:54:23,301 INFO    SenderThread:99190 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2025-08-22 17:54:23,301 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: check_version
+2025-08-22 17:54:23,368 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: run_start
+2025-08-22 17:54:23,375 DEBUG   HandlerThread:99190 [system_info.py:__init__():31] System info init
+2025-08-22 17:54:23,376 DEBUG   HandlerThread:99190 [system_info.py:__init__():46] System info init done
+2025-08-22 17:54:23,376 INFO    HandlerThread:99190 [system_monitor.py:start():150] Starting system monitor
+2025-08-22 17:54:23,376 INFO    SystemMonitor:99190 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-08-22 17:54:23,376 INFO    HandlerThread:99190 [system_monitor.py:probe():168] Collecting system info
+2025-08-22 17:54:23,376 INFO    SystemMonitor:99190 [interfaces.py:start():168] Started cpu
+2025-08-22 17:54:23,377 DEBUG   HandlerThread:99190 [system_info.py:probe():195] Probing system
+2025-08-22 17:54:23,378 INFO    SystemMonitor:99190 [interfaces.py:start():168] Started disk
+2025-08-22 17:54:23,379 INFO    SystemMonitor:99190 [interfaces.py:start():168] Started gpuapple
+2025-08-22 17:54:23,381 INFO    SystemMonitor:99190 [interfaces.py:start():168] Started memory
+2025-08-22 17:54:23,381 INFO    SystemMonitor:99190 [interfaces.py:start():168] Started network
+2025-08-22 17:54:23,382 DEBUG   HandlerThread:99190 [system_info.py:_probe_git():180] Probing git
+2025-08-22 17:54:23,417 DEBUG   HandlerThread:99190 [system_info.py:_probe_git():188] Probing git done
+2025-08-22 17:54:23,417 DEBUG   HandlerThread:99190 [system_info.py:probe():241] Probing system done
+2025-08-22 17:54:23,417 DEBUG   HandlerThread:99190 [system_monitor.py:probe():177] {'os': 'macOS-15.6-arm64-arm-64bit', 'python': '3.11.13', 'heartbeatAt': '2025-08-22T07:54:23.378006', 'startedAt': '2025-08-22T07:54:22.381392', 'docker': None, 'cuda': None, 'args': ('--epochs', '40', '--batch-size', '4', '--classes', '1'), 'state': 'running', 'program': '/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/milesial/Pytorch-UNet.git', 'commit': '21d7850f2af30a9695bbeea75f3136aa538cfc4a'}, 'email': 'shaoqing.ni@sydney.edu.au', 'root': '/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet', 'host': 'Nis-MacBook-Pro.local', 'username': 'nishaoqing', 'executable': '/opt/anaconda3/envs/torch-mps/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'total': 460.4317207336426, 'used': 10.833930969238281}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2025-08-22 17:54:23,417 INFO    HandlerThread:99190 [system_monitor.py:probe():178] Finished collecting system info
+2025-08-22 17:54:23,417 INFO    HandlerThread:99190 [system_monitor.py:probe():181] Publishing system info
+2025-08-22 17:54:23,417 DEBUG   HandlerThread:99190 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-08-22 17:54:23,417 DEBUG   HandlerThread:99190 [system_info.py:_save_pip():67] Saving pip packages done
+2025-08-22 17:54:23,417 DEBUG   HandlerThread:99190 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-08-22 17:54:24,307 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/requirements.txt
+2025-08-22 17:54:24,307 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/wandb-summary.json
+2025-08-22 17:54:24,307 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/conda-environment.yaml
+2025-08-22 17:54:24,989 DEBUG   HandlerThread:99190 [system_info.py:_save_conda():86] Saving conda packages done
+2025-08-22 17:54:24,990 INFO    HandlerThread:99190 [system_monitor.py:probe():183] Finished publishing system info
+2025-08-22 17:54:24,992 DEBUG   SenderThread:99190 [sender.py:send():303] send: files
+2025-08-22 17:54:24,992 INFO    SenderThread:99190 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2025-08-22 17:54:24,995 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: stop_status
+2025-08-22 17:54:24,995 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: stop_status
+2025-08-22 17:54:25,310 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/conda-environment.yaml
+2025-08-22 17:54:25,310 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/wandb-metadata.json
+2025-08-22 17:54:25,394 DEBUG   SenderThread:99190 [sender.py:send():303] send: telemetry
+2025-08-22 17:54:25,394 DEBUG   SenderThread:99190 [sender.py:send():303] send: config
+2025-08-22 17:54:25,823 INFO    Thread-15 :99190 [upload_job.py:push():143] Uploaded file /var/folders/5c/sqjnjbw12f58v92p3gv5wk4c0000gn/T/tmp7pqp_panwandb/4j3lo0sq-wandb-metadata.json
+2025-08-22 17:54:26,317 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/output.log
+2025-08-22 17:54:28,329 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/output.log
+2025-08-22 17:54:40,400 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: stop_status
+2025-08-22 17:54:40,401 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: stop_status
+2025-08-22 17:54:51,313 DEBUG   SenderThread:99190 [sender.py:send():303] send: exit
+2025-08-22 17:54:51,313 INFO    SenderThread:99190 [sender.py:send_exit():442] handling exit code: 1
+2025-08-22 17:54:51,314 INFO    SenderThread:99190 [sender.py:send_exit():444] handling runtime: 27
+2025-08-22 17:54:51,315 INFO    SenderThread:99190 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2025-08-22 17:54:51,315 INFO    SenderThread:99190 [sender.py:send_exit():450] send defer
+2025-08-22 17:54:51,316 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,316 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 0
+2025-08-22 17:54:51,316 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,316 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 0
+2025-08-22 17:54:51,316 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 1
+2025-08-22 17:54:51,316 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,316 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 1
+2025-08-22 17:54:51,316 INFO    HandlerThread:99190 [system_monitor.py:finish():160] Stopping system monitor
+2025-08-22 17:54:51,335 DEBUG   SystemMonitor:99190 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-08-22 17:54:51,335 DEBUG   SystemMonitor:99190 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2025-08-22 17:54:51,336 DEBUG   SystemMonitor:99190 [system_monitor.py:_start():141] Publishing last batch of metrics
+2025-08-22 17:54:51,343 INFO    HandlerThread:99190 [interfaces.py:finish():173] Joined cpu
+2025-08-22 17:54:51,343 INFO    HandlerThread:99190 [interfaces.py:finish():173] Joined disk
+2025-08-22 17:54:51,343 INFO    HandlerThread:99190 [interfaces.py:finish():173] Joined gpuapple
+2025-08-22 17:54:51,343 INFO    HandlerThread:99190 [interfaces.py:finish():173] Joined memory
+2025-08-22 17:54:51,343 INFO    HandlerThread:99190 [interfaces.py:finish():173] Joined network
+2025-08-22 17:54:51,343 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,344 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 1
+2025-08-22 17:54:51,344 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 2
+2025-08-22 17:54:51,344 DEBUG   SenderThread:99190 [sender.py:send():303] send: telemetry
+2025-08-22 17:54:51,344 DEBUG   SenderThread:99190 [sender.py:send():303] send: stats
+2025-08-22 17:54:51,344 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,344 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 2
+2025-08-22 17:54:51,344 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,344 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 2
+2025-08-22 17:54:51,344 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 3
+2025-08-22 17:54:51,344 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,345 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 3
+2025-08-22 17:54:51,345 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,345 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 3
+2025-08-22 17:54:51,345 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 4
+2025-08-22 17:54:51,345 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,345 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 4
+2025-08-22 17:54:51,345 DEBUG   SenderThread:99190 [sender.py:send():303] send: summary
+2025-08-22 17:54:51,345 INFO    SenderThread:99190 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2025-08-22 17:54:51,345 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,345 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 4
+2025-08-22 17:54:51,345 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 5
+2025-08-22 17:54:51,345 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,345 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 5
+2025-08-22 17:54:51,346 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,346 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 5
+2025-08-22 17:54:51,470 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/wandb-summary.json
+2025-08-22 17:54:51,651 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 6
+2025-08-22 17:54:51,651 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:51,651 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 6
+2025-08-22 17:54:51,651 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:51,651 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 6
+2025-08-22 17:54:52,315 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: poll_exit
+2025-08-22 17:54:52,473 INFO    Thread-12 :99190 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/config.yaml
+2025-08-22 17:54:53,556 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 7
+2025-08-22 17:54:53,556 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: poll_exit
+2025-08-22 17:54:53,557 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:53,557 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 7
+2025-08-22 17:54:53,557 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:53,557 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 7
+2025-08-22 17:54:53,557 INFO    SenderThread:99190 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-08-22 17:54:54,478 INFO    SenderThread:99190 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/output.log
+2025-08-22 17:54:54,478 INFO    SenderThread:99190 [dir_watcher.py:finish():392] scan: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files
+2025-08-22 17:54:54,478 INFO    SenderThread:99190 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/requirements.txt requirements.txt
+2025-08-22 17:54:54,478 INFO    SenderThread:99190 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/output.log output.log
+2025-08-22 17:54:54,479 INFO    SenderThread:99190 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/config.yaml config.yaml
+2025-08-22 17:54:54,480 INFO    SenderThread:99190 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/wandb-summary.json wandb-summary.json
+2025-08-22 17:54:54,481 INFO    SenderThread:99190 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/conda-environment.yaml conda-environment.yaml
+2025-08-22 17:54:54,483 INFO    SenderThread:99190 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/wandb-metadata.json wandb-metadata.json
+2025-08-22 17:54:54,484 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 8
+2025-08-22 17:54:54,485 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:54,485 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 8
+2025-08-22 17:54:54,485 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:54,485 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 8
+2025-08-22 17:54:54,485 INFO    SenderThread:99190 [file_pusher.py:finish():168] shutting down file pusher
+2025-08-22 17:54:55,373 INFO    Thread-19 :99190 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/wandb-summary.json
+2025-08-22 17:54:55,387 INFO    Thread-17 :99190 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/output.log
+2025-08-22 17:54:55,431 INFO    Thread-18 :99190 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/config.yaml
+2025-08-22 17:54:55,460 INFO    Thread-20 :99190 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/conda-environment.yaml
+2025-08-22 17:54:55,515 INFO    Thread-16 :99190 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/files/requirements.txt
+2025-08-22 17:54:55,718 INFO    Thread-11 (_thread_body):99190 [sender.py:transition_state():463] send defer: 9
+2025-08-22 17:54:55,719 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:55,719 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 9
+2025-08-22 17:54:55,719 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:55,719 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 9
+2025-08-22 17:54:55,719 INFO    SenderThread:99190 [file_pusher.py:join():173] waiting for file pusher
+2025-08-22 17:54:55,719 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 10
+2025-08-22 17:54:55,719 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:55,719 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 10
+2025-08-22 17:54:55,719 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:55,719 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 10
+2025-08-22 17:54:56,049 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 11
+2025-08-22 17:54:56,050 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:56,050 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 11
+2025-08-22 17:54:56,050 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:56,050 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 11
+2025-08-22 17:54:56,050 INFO    SenderThread:99190 [sender.py:transition_state():463] send defer: 12
+2025-08-22 17:54:56,050 DEBUG   SenderThread:99190 [sender.py:send():303] send: final
+2025-08-22 17:54:56,050 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 17:54:56,050 DEBUG   SenderThread:99190 [sender.py:send():303] send: footer
+2025-08-22 17:54:56,050 INFO    HandlerThread:99190 [handler.py:handle_request_defer():162] handle defer: 12
+2025-08-22 17:54:56,050 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: defer
+2025-08-22 17:54:56,050 INFO    SenderThread:99190 [sender.py:send_request_defer():459] handle sender defer: 12
+2025-08-22 17:54:56,051 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: poll_exit
+2025-08-22 17:54:56,051 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: poll_exit
+2025-08-22 17:54:56,051 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: server_info
+2025-08-22 17:54:56,051 DEBUG   SenderThread:99190 [sender.py:send_request():317] send_request: server_info
+2025-08-22 17:54:56,052 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: get_summary
+2025-08-22 17:54:56,053 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: sampled_history
+2025-08-22 17:54:56,601 INFO    MainThread:99190 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2025-08-22 17:54:56,602 INFO    MainThread:99190 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2025-08-22 17:54:56,602 INFO    MainThread:99190 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2025-08-22 17:54:56,604 DEBUG   HandlerThread:99190 [handler.py:handle_request():139] handle_request: shutdown
+2025-08-22 17:54:56,604 INFO    HandlerThread:99190 [handler.py:finish():814] shutting down handler
+2025-08-22 17:54:57,051 INFO    WriterThread:99190 [datastore.py:close():279] close: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_175422-wpm7j3li/run-wpm7j3li.wandb
+2025-08-22 17:54:57,606 INFO    SenderThread:99190 [sender.py:finish():1331] shutting down sender
+2025-08-22 17:54:57,606 INFO    SenderThread:99190 [file_pusher.py:finish():168] shutting down file pusher
+2025-08-22 17:54:57,606 INFO    SenderThread:99190 [file_pusher.py:join():173] waiting for file pusher
+2025-08-22 17:54:57,872 INFO    MainThread:99190 [internal.py:handle_exit():78] Internal process exited

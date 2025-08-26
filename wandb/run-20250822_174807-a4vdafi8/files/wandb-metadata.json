@@ -1,0 +1,53 @@
+{
+    "os": "macOS-15.6-arm64-arm-64bit",
+    "python": "3.11.13",
+    "heartbeatAt": "2025-08-22T07:48:08.654438",
+    "startedAt": "2025-08-22T07:48:07.600038",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--epochs",
+        "40",
+        "--batch-size",
+        "4",
+        "--classes",
+        "1"
+    ],
+    "state": "running",
+    "program": "/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/milesial/Pytorch-UNet.git",
+        "commit": "21d7850f2af30a9695bbeea75f3136aa538cfc4a"
+    },
+    "email": "shaoqing.ni@sydney.edu.au",
+    "root": "/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet",
+    "host": "Nis-MacBook-Pro.local",
+    "username": "nishaoqing",
+    "executable": "/opt/anaconda3/envs/torch-mps/bin/python3",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "cpu_freq": {
+        "current": 3504,
+        "min": 702,
+        "max": 3504
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3504,
+            "min": 702,
+            "max": 3504
+        }
+    ],
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 10.833930969238281
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

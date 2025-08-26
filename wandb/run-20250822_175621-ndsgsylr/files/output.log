@@ -1,0 +1,29 @@
+INFO: Starting training:
+        Epochs:          40
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   465
+        Validation size: 5
+        Checkpoints:     True
+        Device:          mps
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/40:   0%|                                                                                                                    | 0/465 [00:09<?, ?img/s]
+Traceback (most recent call last):
+  File "/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/train.py", line 245, in <module>
+    train_model(
+  File "/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/train.py", line 128, in train_model
+    loss = criterion(masks_pred.squeeze(1), true_masks.float())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/torch-mps/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/torch-mps/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/torch-mps/lib/python3.11/site-packages/torch/nn/modules/loss.py", line 828, in forward
+    return F.binary_cross_entropy_with_logits(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/torch-mps/lib/python3.11/site-packages/torch/nn/functional.py", line 3593, in binary_cross_entropy_with_logits
+    raise ValueError(
+ValueError: Target size (torch.Size([4, 1, 400, 400])) must be the same as input size (torch.Size([4, 400, 400]))

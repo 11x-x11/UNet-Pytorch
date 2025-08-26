@@ -1,0 +1,178 @@
+2025-08-22 18:53:44,185 INFO    StreamThr :3246 [internal.py:wandb_internal():88] W&B internal server running at pid: 3246, started at: 2025-08-22 18:53:44.182005
+2025-08-22 18:53:44,188 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: status
+2025-08-22 18:53:44,188 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: status
+2025-08-22 18:53:44,189 DEBUG   SenderThread:3246 [sender.py:send():303] send: header
+2025-08-22 18:53:44,189 INFO    WriterThread:3246 [datastore.py:open_for_write():75] open: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/run-vpqp7ika.wandb
+2025-08-22 18:53:44,202 DEBUG   SenderThread:3246 [sender.py:send():303] send: run
+2025-08-22 18:53:44,203 INFO    SenderThread:3246 [sender.py:_maybe_setup_resume():593] checking resume status for None/U-Net/vpqp7ika
+2025-08-22 18:53:45,264 INFO    SenderThread:3246 [dir_watcher.py:__init__():216] watching files in: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files
+2025-08-22 18:53:45,265 INFO    SenderThread:3246 [sender.py:_start_run_threads():928] run started: vpqp7ika with start time 1755852824.159407
+2025-08-22 18:53:45,265 DEBUG   SenderThread:3246 [sender.py:send():303] send: summary
+2025-08-22 18:53:45,265 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: check_version
+2025-08-22 18:53:45,265 INFO    SenderThread:3246 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2025-08-22 18:53:45,265 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: check_version
+2025-08-22 18:53:45,430 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: run_start
+2025-08-22 18:53:45,437 DEBUG   HandlerThread:3246 [system_info.py:__init__():31] System info init
+2025-08-22 18:53:45,437 DEBUG   HandlerThread:3246 [system_info.py:__init__():46] System info init done
+2025-08-22 18:53:45,437 INFO    HandlerThread:3246 [system_monitor.py:start():150] Starting system monitor
+2025-08-22 18:53:45,438 INFO    SystemMonitor:3246 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-08-22 18:53:45,438 INFO    HandlerThread:3246 [system_monitor.py:probe():168] Collecting system info
+2025-08-22 18:53:45,438 INFO    SystemMonitor:3246 [interfaces.py:start():168] Started cpu
+2025-08-22 18:53:45,439 DEBUG   HandlerThread:3246 [system_info.py:probe():195] Probing system
+2025-08-22 18:53:45,439 INFO    SystemMonitor:3246 [interfaces.py:start():168] Started disk
+2025-08-22 18:53:45,439 INFO    SystemMonitor:3246 [interfaces.py:start():168] Started gpuapple
+2025-08-22 18:53:45,441 INFO    SystemMonitor:3246 [interfaces.py:start():168] Started memory
+2025-08-22 18:53:45,442 INFO    SystemMonitor:3246 [interfaces.py:start():168] Started network
+2025-08-22 18:53:45,442 DEBUG   HandlerThread:3246 [system_info.py:_probe_git():180] Probing git
+2025-08-22 18:53:45,475 DEBUG   HandlerThread:3246 [system_info.py:_probe_git():188] Probing git done
+2025-08-22 18:53:45,476 DEBUG   HandlerThread:3246 [system_info.py:probe():241] Probing system done
+2025-08-22 18:53:45,476 DEBUG   HandlerThread:3246 [system_monitor.py:probe():177] {'os': 'macOS-15.6-arm64-arm-64bit', 'python': '3.11.13', 'heartbeatAt': '2025-08-22T08:53:45.439438', 'startedAt': '2025-08-22T08:53:44.148388', 'docker': None, 'cuda': None, 'args': ('--epochs', '40', '--batch-size', '4', '--classes', '1'), 'state': 'running', 'program': '/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/milesial/Pytorch-UNet.git', 'commit': '21d7850f2af30a9695bbeea75f3136aa538cfc4a'}, 'email': 'shaoqing.ni@sydney.edu.au', 'root': '/Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet', 'host': 'Nis-MacBook-Pro.local', 'username': 'nishaoqing', 'executable': '/opt/anaconda3/envs/torch-mps/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'total': 460.4317207336426, 'used': 10.833930969238281}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2025-08-22 18:53:45,476 INFO    HandlerThread:3246 [system_monitor.py:probe():178] Finished collecting system info
+2025-08-22 18:53:45,476 INFO    HandlerThread:3246 [system_monitor.py:probe():181] Publishing system info
+2025-08-22 18:53:45,476 DEBUG   HandlerThread:3246 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-08-22 18:53:45,476 DEBUG   HandlerThread:3246 [system_info.py:_save_pip():67] Saving pip packages done
+2025-08-22 18:53:45,476 DEBUG   HandlerThread:3246 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-08-22 18:53:46,270 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/requirements.txt
+2025-08-22 18:53:46,271 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/wandb-summary.json
+2025-08-22 18:53:46,271 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/conda-environment.yaml
+2025-08-22 18:53:46,894 DEBUG   HandlerThread:3246 [system_info.py:_save_conda():86] Saving conda packages done
+2025-08-22 18:53:46,895 INFO    HandlerThread:3246 [system_monitor.py:probe():183] Finished publishing system info
+2025-08-22 18:53:46,897 DEBUG   SenderThread:3246 [sender.py:send():303] send: files
+2025-08-22 18:53:46,897 INFO    SenderThread:3246 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2025-08-22 18:53:46,899 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: stop_status
+2025-08-22 18:53:46,900 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: stop_status
+2025-08-22 18:53:47,270 DEBUG   SenderThread:3246 [sender.py:send():303] send: telemetry
+2025-08-22 18:53:47,270 DEBUG   SenderThread:3246 [sender.py:send():303] send: config
+2025-08-22 18:53:47,279 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/conda-environment.yaml
+2025-08-22 18:53:47,279 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/wandb-metadata.json
+2025-08-22 18:53:48,058 INFO    Thread-15 :3246 [upload_job.py:push():143] Uploaded file /var/folders/5c/sqjnjbw12f58v92p3gv5wk4c0000gn/T/tmp7he8rmjgwandb/7dzx8pru-wandb-metadata.json
+2025-08-22 18:53:48,276 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/output.log
+2025-08-22 18:53:50,288 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/output.log
+2025-08-22 18:54:02,307 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: stop_status
+2025-08-22 18:54:02,308 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: stop_status
+2025-08-22 18:54:15,424 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/config.yaml
+2025-08-22 18:54:17,706 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: stop_status
+2025-08-22 18:54:17,706 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: stop_status
+2025-08-22 18:54:33,329 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: stop_status
+2025-08-22 18:54:33,330 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: stop_status
+2025-08-22 18:54:38,998 DEBUG   SenderThread:3246 [sender.py:send():303] send: exit
+2025-08-22 18:54:38,998 INFO    SenderThread:3246 [sender.py:send_exit():442] handling exit code: 1
+2025-08-22 18:54:38,998 INFO    SenderThread:3246 [sender.py:send_exit():444] handling runtime: 53
+2025-08-22 18:54:38,999 INFO    SenderThread:3246 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2025-08-22 18:54:39,000 INFO    SenderThread:3246 [sender.py:send_exit():450] send defer
+2025-08-22 18:54:39,000 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,000 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 0
+2025-08-22 18:54:39,000 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,000 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 0
+2025-08-22 18:54:39,001 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 1
+2025-08-22 18:54:39,001 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,001 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 1
+2025-08-22 18:54:39,001 INFO    HandlerThread:3246 [system_monitor.py:finish():160] Stopping system monitor
+2025-08-22 18:54:39,017 DEBUG   SystemMonitor:3246 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-08-22 18:54:39,017 DEBUG   SystemMonitor:3246 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2025-08-22 18:54:39,017 DEBUG   SystemMonitor:3246 [system_monitor.py:_start():141] Publishing last batch of metrics
+2025-08-22 18:54:39,018 INFO    HandlerThread:3246 [interfaces.py:finish():173] Joined cpu
+2025-08-22 18:54:39,018 INFO    HandlerThread:3246 [interfaces.py:finish():173] Joined disk
+2025-08-22 18:54:39,018 INFO    HandlerThread:3246 [interfaces.py:finish():173] Joined gpuapple
+2025-08-22 18:54:39,018 INFO    HandlerThread:3246 [interfaces.py:finish():173] Joined memory
+2025-08-22 18:54:39,018 INFO    HandlerThread:3246 [interfaces.py:finish():173] Joined network
+2025-08-22 18:54:39,018 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,018 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 1
+2025-08-22 18:54:39,018 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 2
+2025-08-22 18:54:39,019 DEBUG   SenderThread:3246 [sender.py:send():303] send: telemetry
+2025-08-22 18:54:39,019 DEBUG   SenderThread:3246 [sender.py:send():303] send: stats
+2025-08-22 18:54:39,019 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,019 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 2
+2025-08-22 18:54:39,019 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,019 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 2
+2025-08-22 18:54:39,019 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 3
+2025-08-22 18:54:39,019 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,019 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 3
+2025-08-22 18:54:39,019 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,019 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 3
+2025-08-22 18:54:39,019 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 4
+2025-08-22 18:54:39,019 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,019 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 4
+2025-08-22 18:54:39,019 DEBUG   SenderThread:3246 [sender.py:send():303] send: summary
+2025-08-22 18:54:39,020 INFO    SenderThread:3246 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2025-08-22 18:54:39,020 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,020 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 4
+2025-08-22 18:54:39,020 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 5
+2025-08-22 18:54:39,020 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,020 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 5
+2025-08-22 18:54:39,020 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,020 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 5
+2025-08-22 18:54:39,399 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 6
+2025-08-22 18:54:39,400 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:39,400 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 6
+2025-08-22 18:54:39,400 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:39,400 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 6
+2025-08-22 18:54:39,529 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/config.yaml
+2025-08-22 18:54:39,529 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/wandb-summary.json
+2025-08-22 18:54:39,530 INFO    Thread-12 :3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/output.log
+2025-08-22 18:54:39,998 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: poll_exit
+2025-08-22 18:54:41,405 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 7
+2025-08-22 18:54:41,407 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: poll_exit
+2025-08-22 18:54:41,407 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:41,407 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 7
+2025-08-22 18:54:41,407 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:41,407 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 7
+2025-08-22 18:54:41,407 INFO    SenderThread:3246 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-08-22 18:54:41,533 INFO    SenderThread:3246 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/output.log
+2025-08-22 18:54:41,534 INFO    SenderThread:3246 [dir_watcher.py:finish():392] scan: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files
+2025-08-22 18:54:41,534 INFO    SenderThread:3246 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/requirements.txt requirements.txt
+2025-08-22 18:54:41,534 INFO    SenderThread:3246 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/output.log output.log
+2025-08-22 18:54:41,536 INFO    SenderThread:3246 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/config.yaml config.yaml
+2025-08-22 18:54:41,539 INFO    SenderThread:3246 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/wandb-summary.json wandb-summary.json
+2025-08-22 18:54:41,541 INFO    SenderThread:3246 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/conda-environment.yaml conda-environment.yaml
+2025-08-22 18:54:41,542 INFO    SenderThread:3246 [dir_watcher.py:finish():406] scan save: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/wandb-metadata.json wandb-metadata.json
+2025-08-22 18:54:41,542 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 8
+2025-08-22 18:54:41,544 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:41,545 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 8
+2025-08-22 18:54:41,545 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:41,545 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 8
+2025-08-22 18:54:41,545 INFO    SenderThread:3246 [file_pusher.py:finish():168] shutting down file pusher
+2025-08-22 18:54:42,596 INFO    Thread-18 :3246 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/config.yaml
+2025-08-22 18:54:42,620 INFO    Thread-16 :3246 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/requirements.txt
+2025-08-22 18:54:42,638 INFO    Thread-19 :3246 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/wandb-summary.json
+2025-08-22 18:54:42,644 INFO    Thread-17 :3246 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/output.log
+2025-08-22 18:54:42,662 INFO    Thread-20 :3246 [upload_job.py:push():143] Uploaded file /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/files/conda-environment.yaml
+2025-08-22 18:54:42,868 INFO    Thread-11 (_thread_body):3246 [sender.py:transition_state():463] send defer: 9
+2025-08-22 18:54:42,869 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:42,869 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 9
+2025-08-22 18:54:42,869 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:42,869 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 9
+2025-08-22 18:54:42,869 INFO    SenderThread:3246 [file_pusher.py:join():173] waiting for file pusher
+2025-08-22 18:54:42,869 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 10
+2025-08-22 18:54:42,870 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:42,870 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 10
+2025-08-22 18:54:42,870 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:42,870 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 10
+2025-08-22 18:54:43,195 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 11
+2025-08-22 18:54:43,196 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:43,196 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 11
+2025-08-22 18:54:43,196 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:43,196 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 11
+2025-08-22 18:54:43,196 INFO    SenderThread:3246 [sender.py:transition_state():463] send defer: 12
+2025-08-22 18:54:43,196 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: defer
+2025-08-22 18:54:43,197 DEBUG   SenderThread:3246 [sender.py:send():303] send: final
+2025-08-22 18:54:43,197 INFO    HandlerThread:3246 [handler.py:handle_request_defer():162] handle defer: 12
+2025-08-22 18:54:43,197 DEBUG   SenderThread:3246 [sender.py:send():303] send: footer
+2025-08-22 18:54:43,197 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: defer
+2025-08-22 18:54:43,197 INFO    SenderThread:3246 [sender.py:send_request_defer():459] handle sender defer: 12
+2025-08-22 18:54:43,197 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: poll_exit
+2025-08-22 18:54:43,197 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: poll_exit
+2025-08-22 18:54:43,198 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: server_info
+2025-08-22 18:54:43,198 DEBUG   SenderThread:3246 [sender.py:send_request():317] send_request: server_info
+2025-08-22 18:54:43,199 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: get_summary
+2025-08-22 18:54:43,200 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: sampled_history
+2025-08-22 18:54:43,760 INFO    MainThread:3246 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2025-08-22 18:54:43,760 INFO    MainThread:3246 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2025-08-22 18:54:43,760 INFO    MainThread:3246 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2025-08-22 18:54:43,760 DEBUG   HandlerThread:3246 [handler.py:handle_request():139] handle_request: shutdown
+2025-08-22 18:54:43,761 INFO    HandlerThread:3246 [handler.py:finish():814] shutting down handler
+2025-08-22 18:54:44,197 INFO    WriterThread:3246 [datastore.py:close():279] close: /Users/nishaoqing/Desktop/USYD/THIRD-YEAR/COMP3888/Pytorch-UNet/wandb/run-20250822_185344-vpqp7ika/run-vpqp7ika.wandb
+2025-08-22 18:54:44,765 INFO    SenderThread:3246 [sender.py:finish():1331] shutting down sender
+2025-08-22 18:54:44,765 INFO    SenderThread:3246 [file_pusher.py:finish():168] shutting down file pusher
+2025-08-22 18:54:44,765 INFO    SenderThread:3246 [file_pusher.py:join():173] waiting for file pusher
+2025-08-22 18:54:45,689 INFO    MainThread:3246 [internal.py:handle_exit():78] Internal process exited

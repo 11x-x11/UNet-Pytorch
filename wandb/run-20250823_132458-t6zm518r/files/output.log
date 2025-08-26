@@ -1,0 +1,60 @@
+INFO: Starting training:
+        Epochs:          40
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   465
+        Validation size: 5
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: False
+
+Epoch 1/40:  20%|█████████▋                                       | 92/465 [00:12<00:10, 34.30img/s, loss (batch)=1.27]
+
+Epoch 1/40:  20%|█████████▋                                       | 92/465 [00:12<00:10, 34.30img/s, loss (batch)=1.27]Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x000001DE4D1FE5C0>
+Traceback (most recent call last):
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1604, in __del__
+    self._shutdown_workers()
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1568, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\process.py", line 149, in join
+    res = self._popen.wait(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\multiprocessing\popen_spawn_win32.py", line 109, in wait
+    res = _winapi.WaitForSingleObject(int(self._handle), msecs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+Epoch 1/40:  20%|█████████▋                                       | 92/465 [00:21<01:29,  4.18img/s, loss (batch)=1.27]
+Traceback (most recent call last):
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1243, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "C:\Users\Nishaoqing\Desktop\Pytorch-UNet\Pytorch-UNet\train.py", line 253, in <module>
+    train_model(
+  File "C:\Users\Nishaoqing\Desktop\Pytorch-UNet\Pytorch-UNet\train.py", line 174, in train_model
+    val_score = evaluate(model, val_loader, device, amp)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\Desktop\Pytorch-UNet\Pytorch-UNet\evaluate.py", line 16, in evaluate
+    for batch in tqdm(dataloader, total=num_val_batches, desc='Validation round', unit='batch', leave=False):
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\tqdm\std.py", line 1195, in __iter__
+    for obj in iterable:
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1448, in _next_data
+    idx, data = self._get_data()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1402, in _get_data
+    success, data = self._try_get_data()
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nishaoqing\AppData\Local\Programs\Python\Python311\Lib\site-packages\torch\utils\data\dataloader.py", line 1256, in _try_get_data
+    raise RuntimeError(
+RuntimeError: DataLoader worker (pid(s) 30640, 28712, 24232, 30692, 11472, 28324, 30700, 2248, 27872, 27840, 27816, 28408, 27780, 27956, 28260, 27988, 28340, 28336, 27708, 2332, 11788, 28116, 27700, 27712, 27904) exited unexpectedly

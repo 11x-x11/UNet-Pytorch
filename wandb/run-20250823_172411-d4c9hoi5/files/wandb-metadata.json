@@ -1,0 +1,58 @@
+{
+    "os": "Windows-10-10.0.26100-SP0",
+    "python": "3.11.2",
+    "heartbeatAt": "2025-08-23T07:24:12.612045",
+    "startedAt": "2025-08-23T07:24:11.330613",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--epochs",
+        "40",
+        "--batch-size",
+        "32",
+        "--classes",
+        "1",
+        "--amp"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Nishaoqing\\Desktop\\UNet\\Pytorch-UNet\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/milesial/Pytorch-UNet.git",
+        "commit": "21d7850f2af30a9695bbeea75f3136aa538cfc4a"
+    },
+    "email": "nishaoqing0128@gmail.com",
+    "root": "C:/Users/Nishaoqing/Desktop/UNet/Pytorch-UNet",
+    "host": "DESKTOP-FDIPU7E",
+    "username": "Nishaoqing",
+    "executable": "C:\\Users\\Nishaoqing\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3000.0,
+        "min": 0.0,
+        "max": 3000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 0.0,
+            "max": 3000.0
+        }
+    ],
+    "disk": {
+        "total": 256.0040473937988,
+        "used": 202.74911880493164
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 15.847038269042969
+    }
+}
