@@ -1,5 +1,5 @@
-matplotlib==3.6.2
-numpy==1.23.5
-Pillow==9.3.0
-tqdm==4.64.1
-wandb==0.13.5
+matplotlib==3.8.4
+numpy==1.26.4
+Pillow==10.4.0
+tqdm==4.67.1
+wandb==0.17.5
